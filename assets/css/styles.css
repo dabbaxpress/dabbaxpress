@@ -44,7 +44,7 @@
 @media screen and (min-width: 768px){
   :root{
     --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -60,6 +60,26 @@
 
 html{
   scroll-behavior: smooth;
+}
+
+/*=========== LOGO ==========*/
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  width: 40px; /* Adjust this value as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align the image vertically */
+}
+
+.logo__letter--with-space {
+  margin-left:5px; /* Adjust this value as needed */
+}
+
+.logo__letter--with-space {
+  margin-left:5px; /* Adjust this value as needed */
 }
 
 /*========== Variables Dark theme ==========*/
@@ -309,6 +329,7 @@ img{
 
 .about__description{
   margin-bottom: var(--mb-3);
+  text-align: justify;
 }
 
 .about__img{
@@ -374,7 +395,7 @@ img{
 
 .menu__name, .menu__preci{
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: #d92d27;
 }
 
 .menu__name{
@@ -384,6 +405,7 @@ img{
 
 .menu__detail, .menu__preci{
   font-size: var(--small-font-size);
+  text-align: center;
 }
 
 .menu__detail{
